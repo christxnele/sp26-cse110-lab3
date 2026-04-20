@@ -27,7 +27,7 @@ header {
 
 h1 {
     background-color: var(--section-color);
-    color: #f0f4f0;
+    color: white;
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -42,6 +42,12 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+nav {
+    & a {
+        font-weight: bold;
+    }
 }
 
 nav p {
@@ -92,6 +98,10 @@ h3.date {
     font-weight: lighter;
 }
 
+.date {
+    font-style: italic;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -129,7 +139,7 @@ main > div, main > section {
     display: block;
 }
 
-/* ----- form inputs -------*/
+/* ----- form area -------*/
 input, textarea, select {
     border: 1px solid #667761;
     border-radius: 4px;
@@ -138,6 +148,13 @@ input, textarea, select {
 
 button {
     display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 
@@ -154,4 +171,56 @@ footer {
     padding-right: 2rem;
     height: 80px;
     font-size: 12pt;
+}
+
+
+
+/*--------- SELECTORS -----------*/
+input[type="text"] {
+    width: 200px;
+}
+
+h2 + p {
+    margin-top: 0;
+}
+
+h2 ~ ul {
+    padding-left: 2rem;
+}
+section:has(audio) {
+    background-color: color-mix(in srgb, white 90%, var(--background-color));
+}
+
+
+/* ---------- MEDIA QUERY ----------- */
+
+@media (max-width: 600px) {
+    nav {
+    border: none;
+    margin: 0;
+    padding: 0;
+    }
+    nav p {
+        display: none;
+    }
+    header hr {
+        display: none;
+    }
+    main {
+        padding: 1rem;
+        min-width: unset;
+    }
+    video, audio {
+        width: 100%;
+    }
+    #designs {
+        grid-template-columns: 1fr;
+    }
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
 }
