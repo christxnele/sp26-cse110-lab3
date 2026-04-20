@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Note</title>
     <link rel="icon" href="favicon.ico">
-  </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
 
   <body>
     <header>
       <div>
         <h1>Meeting Note</h1>
         <nav>
-          <ul>
-            <li><a href="#attendance">Attendance List</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#unfinished-business">Unfinished Business </a></li>
-            <li><a href="#new-business">New Business</a></li>
-            <li><a href="#extras">Questions, Comments & Concerns</a></li>
-            <li><a href="#designs">Designs and Architecture</a></li>
-            <li><a href="#recordings">Recordings</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#form">Form</a></li>
-          </ul>
+            <p><a href="#attendance">Attendance List</a> <span>|</span>
+                <a href="#agenda">Agenda</a> <span>|</span> 
+                <a href="#unfinished-business">Unfinished Business </a><span>|</span>
+                <a href="#new-business">New Business</a> <span>|</span> 
+                <a href="#extras">Questions & Comments</a> <span>|</span> 
+                <a href="#designs">Designs & Architecture</a> <span>|</span> 
+                <a href="#recordings">Recordings</a> <span>|</span>
+                <a href="#faq">FAQ</a> <span>|</span>
+                <a href="#form">Form</a></p>
         </nav>
       </div>
+      <hr>
     </header>
-    <hr>
 
     <main>
         <section>
             <h2>Topic of Meeting - Checkups</h2>
-            <h3>April 9th, 2026</h3>
+            <h3 class="date">April 9th, 2026</h3>
         </section>
       
 
@@ -81,7 +83,7 @@
     </div>
 
     <div id="extras">
-        <h2>Questions, Comments & Concerns</h2>
+        <h2>Questions & Comments</h2>
         <ul>
             <li>Member 1 asked whether we should migrate to a new testing framework before the next release</li>
             <li>Member 3 raised a concern about the current deployment pipeline being too slow and suggested looking into caching solutions</li>
