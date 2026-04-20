@@ -83,7 +83,7 @@ hr {
 
 h2 {
     background-color: color-mix(in srgb, #f0f4f0 70%, white);
-    color: color(display-p3 0.1 0.28 0.1);
+    color: color(display-p3 0.1 0.28 0.1 / 1);
     border-left: 4px solid #2d4a2d;
     padding-left: 10px;
     margin-top: 0;
